@@ -206,7 +206,7 @@ let g:netrw_altv=1
 let g:closetag_filenames = '*.html,*.xhtml,*.js,*.jsx,*.phtml'
 let g:tagalong_filetypes = ['html', 'xml', 'jsx', 'eruby', 'ejs', 'eco', 'php', 'htmldjango', 'javascriptreact', 'typescriptreact']
 let g:tagalong_additional_filetypes = ['js', 'javascript']
-let g:tagalong_verbose = 1
+let g:tagalong_verrose = 1
 let g:Hexokinase_highlighters = ['backgroundfull']
 let g:mta_filetypes = {
     \ 'html' : 1,
@@ -276,6 +276,7 @@ nnoremap U <C-r>
 nnoremap E $
 nnoremap B ^
 nnoremap <expr> <f9> &foldlevel ? 'zM' :'zR'
+nnoremap <f8> zA
 nnoremap ff za
 tmap <Esc> <C-\><C-n>
 tmap <C-w> <Esc><C-w>
@@ -299,4 +300,13 @@ inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 nmap <F2> <Plug>(coc-rename)
 nmap <leader><leader>f <Plug>(coc-fix-current)
 nmap <leader><leader>a <Plug>(coc-codeaction)
-nmap <leader><leader> <Plug>(coc-diagnostic-next)
+nmap <leader><leader>n <Plug>(coc-diagnostic-next)
+nmap <leader>bb <C-^> 
+nmap <leader><leader>z mA
+nmap <leader><leader>a 'A
+nmap <leader><leader>x mS
+nmap <leader><leader>s 'S
+nmap <leader><leader>c mD
+nmap <leader><leader>d 'D
+nmap <leader><leader>v mF
+nmap <leader><leader>f 'F
