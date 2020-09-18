@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/Users/chet_hay/.config/nvim'
+let g:netrw_dirhist_0='/Users/chet_hay/ROSE/sny-tv/src/components/liveStreaming'
+let g:netrw_dirhist_9='/Users/chet_hay/ROSE/sny-tv'
+let g:netrw_dirhist_8='/Users/chet_hay/ROSE/sny-tv/src'
+let g:netrw_dirhist_7='/Users/chet_hay/ROSE/sny-tv/src/pages'
+let g:netrw_dirhist_6='/Users/chet_hay/ROSE/gatsby-sandbox/public'
+let g:netrw_dirhist_5='/Users/chet_hay/ROSE/gatsby-sandbox'
+let g:netrw_dirhist_4='/Users/chet_hay/ROSE/gatsby-sandbox/public'
+let g:netrw_dirhist_3='/Users/chet_hay/ROSE/gatsby-sandbox'
+let g:netrw_dirhist_2='/Users/chet_hay/ROSE/gatsby-sandbox/public/static'
