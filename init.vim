@@ -57,16 +57,6 @@ autocmd FileType htmldjango inoremap {% {%  %}<left><left><left>
 autocmd FileType htmldjango inoremap {# {#  #}<left><left><left>
 autocmd FileType markdown setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
-augroup remember_folds
-  autocmd!
-  autocmd BufWinLeave *.* mkview
-  autocmd BufWinEnter *.* silent! loadview
-augroup END
-
-augroup highlight_yank
-    autocmd!
-    autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({timeout = 40})
-augroup END
 "=======================================
 "============   BASE/SANITY ============
 "=======================================
@@ -99,7 +89,7 @@ set autoread
 let g:skipview_files = ['*\.vim']
 
 "===================================================
-"============   AUTOSAVE/UNLIMITED UNDO ============
+"================== AUTO-STUFF =====================
 "===================================================
 set autowriteall
 au FocusLost * silent! wa
@@ -109,6 +99,17 @@ if has('persistent_undo')
     set undodir="$HOME/.config/nvim/.NVIM_UNDO_FILES"
     set undofile
 endif
+
+augroup remember_folds
+  autocmd!
+  autocmd BufWinLeave *.* mkview
+  autocmd BufWinEnter *.* silent! loadview
+augroup END
+
+augroup highlight_yank
+    autocmd!
+    autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({timeout = 40})
+augroup END
 
 "=============================================
 "============ DISPLAY PREFERENCES ============
